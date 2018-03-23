@@ -10,7 +10,7 @@ $(document).ready(function(){
   $("#get-started").click(function(event){
     event.preventDefault();
     $("#intro").toggle();
-
+    $("#second-card").toggle();
   });
 
 });

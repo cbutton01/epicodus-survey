@@ -11,8 +11,8 @@
 <body>
   <div class="container-fluid">
     <div>
+      <div class="row">
       <form id="survey-intro">
-        <div class="row">
           <div class="col-md-6">
             <div class="form-control text-input">
               <label for="name">Enter your name</label>
@@ -26,21 +26,55 @@
             </div>
           </div>
           <button type="submit" name="button" class="btn-lg bg-primary">Begin</button>
-        </form>
-      </div><!--end of form-->
-      <div id="intro">
-        <div class="card">
-          <div class="card-body">
-            <p>Hello <span class="insert" id="name-insert"></span> thank you for looking into epicodus where you will seek a way to fulfill your goals within the tech industry; maybe you want to change careers or maybe you want to advance your current career path.  Whatever it is the staff here at epicodus is here to help you on your way.<br><br>
-              However it can be hard to choose one of the many class track options that epicodus has available.  Take this brief servey to see where you best fit.</p>
-              <img id="get-started" class="card-img-bottom" src="img/tyler.jpeg" alt="Tylers Face">
-              <div class="card-footer text-muted">
-                <p>Click the image to get started</p>
-              </div>
+        </form><!--end of form-->
+      </div>
+    </div>
+    <div id="intro">
+      <div class="card">
+        <div class="card-body">
+          <p>Hello <span class="insert" id="name-insert"></span> thank you for looking into epicodus where you will seek a way to fulfill your goals within the tech industry; maybe you want to change careers or maybe you want to advance your current career path.  Whatever it is the staff here at epicodus is here to help you on your way.<br><br>
+            However it can be hard to choose one of the many class track options that epicodus has available.  Take this brief servey to see where you best fit.</p>
+            <img id="get-started" class="card-img-bottom" src="img/tyler.jpeg" alt="Tylers Face">
+            <div class="card-footer text-muted">
+              <p>Click the image to get started</p>
             </div>
           </div>
         </div>
+      </div><!-- end of intro -->
+
+    </div>
+    <div class="container-fluid">
+      <div class="card" id="second-card">
+        <div class="card-body">
+          <form id="survey-for-track">
+            <div class="form-control">
+              <label for="prev-xp">Do you have any previous coding experience?</label>
+              <select id="prev-xp">
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="appeal">Which are you more interested in?</label>
+              <div class="btn-group btn-group-toggle" id="appeal">
+                <label class="btn btn-secondary">Front End Development
+                  <input type="radio" id="front-end" value="front">
+                </label>
+                <label class="btn btn-secondary">Back End Development
+                  <input type="radio" id="back-end" value="back">
+                </label>
+              </div>
+              <div id="rest-of-survey">
+
+              </div>
+              <div id="front-track">
+
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-    </div><!--end of container-->
+    </div>
+  </div>
   </body>
   </html>

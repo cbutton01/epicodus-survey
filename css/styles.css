@@ -11,11 +11,12 @@
   color: white;
 }
 
-div.text-input {
+div.form-control {
   border: 0px;
 }
 
 .card {
+  margin-top: 100px;
   padding: 20px;
 }
 
@@ -33,6 +34,6 @@ div.text-input {
   text-align: center;
 }
 
-#intro {
+#intro, #second-card, #rest-of-survey, #front-track {
   display: none;
 }
