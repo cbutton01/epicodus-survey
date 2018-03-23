@@ -27,31 +27,32 @@ $(document).ready(function(){
     $("#intro").hide();
     $("#second-card").show();
     $("#appeal").click(function(event){
-    var choiceResult = $("input:radio[name = front-or-back]:checked").val(); //will return which one was checked!
+      var choiceResult = $("input:radio[name = front-or-back]:checked").val(); //will return which one was checked!
 
-    if(choiceResult === "front"){
-      $("#front-track").show();
-      $("#rest-of-survey").hide();
-    } else if (choiceResult === "back"){
-      $("#rest-of-survey").show();
-      $("#front-track").hide();
-    }
-  });
+      if(choiceResult === "front"){
+        $("#front-track").show();
+        $("#rest-of-survey").hide();
+      } else if (choiceResult === "back"){
+        $("#rest-of-survey").show();
+        $("#front-track").hide();
+      }
+    });
   });
 
   $("#survey-for-track").submit(function(event){
     event.preventDefault();
     debugger;
     var enviro = $("input:radio[name = enviro ]:checked").val();
+    console.log(enviro);
     //series of results and conditionals for results to display
-    //$("#survey-for-track").hide();
     if(enviro === "sharp"){
       $(".results#cSharp").show();
     } else if (enviro === "java") {
-      $(".results#java").show();
+      $(".results#java").toggle();
+      alert("it should work");
     } else if (enviro === "ruby") {
       $(".results#ruby").show();
-    }
+    };
 
   });
 

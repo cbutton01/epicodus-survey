@@ -20,7 +20,7 @@ _no additional software or libraries required_
 
 * _Currently the last submit button will not yield any result._
 
-* _Currently the site is not portfolio ready, and needs a better design layout
+* _Currently the site is not portfolio ready, and needs a better design layout_
 
 ## Support and contact details
 
