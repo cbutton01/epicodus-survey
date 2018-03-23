@@ -43,13 +43,13 @@ $(document).ready(function(){
     event.preventDefault();
     //series of results and conditionals for results to display
     $("#survey-for-track").hide();
-    if(/**/){
-      $("#cSharp").show();
-    } else if (/**/) {
-      #$("#java").show();
-    } else if (/**/) {
-      #$("#ruby").show();
-    }
+    // if(/**/){
+    //   $("#cSharp").show();
+    // } else if (/**/) {
+    //   #$("#java").show();
+    // } else if (/**/) {
+    //   #$("#ruby").show();
+    // }
 
   })
 
