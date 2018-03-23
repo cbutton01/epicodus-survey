@@ -9,8 +9,14 @@ $(document).ready(function(){
   });
   $("#get-started").click(function(event){
     event.preventDefault();
-    $("#intro").toggle();
+    $("#intro").hide();
+    $("#second-card").show();
 
+    if(/*front end is toggled*/){
+      //show text about front end tracks
+    } else if (/*back end is toggled*/) {
+      //show more of the survey
+    }
   });
 
 });
