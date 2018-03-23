@@ -39,4 +39,18 @@ $(document).ready(function(){
   });
   });
 
+  $("#survey-for-track").submit(function(event){
+    event.preventDefault();
+    //series of results and conditionals for results to display
+    $("#survey-for-track").hide();
+    if(/**/){
+      $("#cSharp").show();
+    } else if (/**/) {
+      #$("#java").show();
+    } else if (/**/) {
+      #$("#ruby").show();
+    }
+
+  })
+
 });
