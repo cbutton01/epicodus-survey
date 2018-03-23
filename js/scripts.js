@@ -41,16 +41,18 @@ $(document).ready(function(){
 
   $("#survey-for-track").submit(function(event){
     event.preventDefault();
+    debugger;
+    var enviro = $("input:radio[name = enviro ]:checked").val();
     //series of results and conditionals for results to display
-    $("#survey-for-track").hide();
-    // if(/**/){
-    //   $("#cSharp").show();
-    // } else if (/**/) {
-    //   #$("#java").show();
-    // } else if (/**/) {
-    //   #$("#ruby").show();
-    // }
+    //$("#survey-for-track").hide();
+    if(enviro === "sharp"){
+      $(".results#cSharp").show();
+    } else if (enviro === "java") {
+      $(".results#java").show();
+    } else if (enviro === "ruby") {
+      $(".results#ruby").show();
+    }
 
-  })
+  });
 
 });
