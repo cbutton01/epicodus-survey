@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  $("#survey").submit(function(event){
+  $("#survey-intro").submit(function(event){
     event.preventDefault();
     var name = $("#name").val();
     var goals = $("#goals").val();
-    $("#survey").toggle();
+    $("#survey-intro").toggle();
     $("#intro").toggle();
     $("#name-insert").text(name);
   });
