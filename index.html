@@ -12,22 +12,24 @@
   <div class="container-fluid">
     <div>
       <form id="survey">
-        <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-3">
+            <!--empty space-->
+          </div>
+          <div class="col-md-3">
             <div class="form-control text-input">
-              <label for="name"></label>
-              <input type="text" name="name">
+              <label for="name">Enter your name</label>
+              <input type="text" id="name" name="name">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-control text-input">
-              <label for="goals"></label>
-              <input type="text" name="goals" value="">
+              <label for="goals">What are your goals in tech?</label>
+              <input type="text" id="goals" name="goals" value="">
             </div>
           </div>
         </div><!--end of row-->
-      </div>
+        <button type="submit" name="button" class="btn-lg bg-primary">Begin</button>
       </form>
     </div><!--end of form-->
   </div><!--end of container-->
