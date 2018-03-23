@@ -14,3 +14,25 @@
 div.text-input {
   border: 0px;
 }
+
+.card {
+  padding: 20px;
+}
+
+.card-img-bottom{
+  max-width: 300px;
+  margin-left: 35%;
+  margin-bottom: 10%;
+}
+
+.card-img-bottom:hover {
+  box-shadow: 0px 5px 20px #ffed6b;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+#intro {
+  display: none;
+}

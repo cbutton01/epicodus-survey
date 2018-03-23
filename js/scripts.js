@@ -1,9 +1,16 @@
-var name = $("#name").val();
-var goals = $("#goals").val();
-
 $(document).ready(function(){
   $("#survey").submit(function(event){
     event.preventDefault();
-    $("#survey").fadeOut('slow');
-  })
-})
+    var name = $("#name").val();
+    var goals = $("#goals").val();
+    $("#survey").toggle();
+    $("#intro").toggle();
+    $("#name-insert").text(name);
+  });
+  $("#get-started").click(function(event){
+    event.preventDefault();
+    $("#intro").toggle();
+
+  });
+
+});
