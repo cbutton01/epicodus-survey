@@ -12,11 +12,19 @@ $(document).ready(function(){
     $("#intro").hide();
     $("#second-card").show();
 
-    if(/*front end is toggled*/){
-      //show text about front end tracks
-    } else if (/*back end is toggled*/) {
-      //show more of the survey
+    
+
+    $("#appeal").click(function(event){
+    var choiceResult = $("input:radio[name = front-or-back]:checked").val(); //will return which one was checked!
+
+    if(choiceResult === "front"){
+      $("#front-track").show();
+      $("#rest-of-survey").hide();
+    } else if (choiceResult === "back"){
+      $("#rest-of-survey").show();
+      $("#front-track").hide();
     }
+  });
   });
 
 });
