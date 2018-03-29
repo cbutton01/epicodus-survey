@@ -43,17 +43,13 @@ $(document).ready(function(){
     event.preventDefault();
     debugger;
     var enviro = $("input:radio[name = enviro ]:checked").val();
-    console.log(enviro);
     //series of results and conditionals for results to display
     if(enviro === "sharp"){
-      $(".results#cSharp").show();
+      $("#cSharp").show();
     } else if (enviro === "java") {
-      $(".results#java").toggle();
-      alert("it should work");
+      $("#java").toggle();
     } else if (enviro === "ruby") {
-      $(".results#ruby").show();
+      $("#ruby").show();
     };
-
   });
-
 });
