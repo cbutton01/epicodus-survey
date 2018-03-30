@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
-  <meta charset="utf-8">
-  <title>Track Survey</title>
-</head>
-<body>
-  <div class="container-fluid">
-    <form id="survey-intro">
-      <div class="row-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-control text-input">
-              <label for="name">Enter your name</label>
-              <input type="text" id="name" name="name">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Track Survey</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <form id="survey-intro">
+        <div class="row-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-control text-input">
+                <label for="name">Enter your name</label>
+                <input type="text" id="name" name="name">
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-control text-input">
-              <label for="goals">What are your goals in tech?</label>
-              <input type="text" id="goals" name="goals" value="">
+            <div class="col-md-6">
+              <div class="form-control text-input">
+                <label for="goals">What are your goals in tech?</label>
+                <input type="text" id="goals" name="goals" value="">
+              </div>
             </div>
+            <button type="submit" name="button" class="btn-lg bg-primary">Begin</button>
           </div>
-          <button type="submit" name="button" class="btn-lg bg-primary">Begin</button>
         </div>
-      </div>
-    </form>
-    <div id="intro">
-      <div class="card">
-        <div class="card-body">
-          <p>Hello <span class="insert" id="name-insert"></span> thank you for looking into epicodus where you will seek a way to fulfill your goals within the tech industry; maybe you want to change careers or maybe you want to advance your current career path.  Whatever it is the staff here at epicodus is here to help you on your way.<br><br>
-            However it can be hard to choose one of the many class track options that epicodus has available.  Take this brief servey to see where you best fit.</p>
+      </form>
+      <div id="intro">
+        <div class="card">
+          <div class="card-body">
+            <p>Hello <span class="insert" id="name-insert"></span> thank you for looking into epicodus where you will seek a way to fulfill your goals within the tech industry; maybe you want to change careers or maybe you want to advance your current career
+              path. Whatever it is the staff here at epicodus is here to help you on your way.<br><br> However it can be hard to choose one of the many class track options that epicodus has available. Take this brief servey to see where you best fit.</p>
             <img id="get-started" class="card-img-bottom" src="img/tyler.jpeg" alt="Tylers Face">
             <div class="card-footer text-muted">
               <p>Click the image to get started</p>
             </div>
           </div>
         </div>
-      </div><!-- end of intro -->
+      </div>
+      <!-- end of intro -->
       <div class="card" id="second-card">
         <div class="card-body">
           <form id="survey-for-track">
             <div class="form-control">
               <label for="prev-xp">Do you have any previous coding experience?</label>
               <select id="prev-xp">
-                <option value="">--</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
+                  <option value="">--</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
             </div>
             <div class="previous-xp-result">
-              <p id="if-yes">Great!  No doubt you have an impressive toolset that will not only assist you, but also your fellow students.  Go on with the rest of the survey to see where you fit!</p>
-              <p id="if-no">No worries!  Epicodus curriculum is built so that students can learn from the ground up.  Go on with the rest of the survey to see where you fit!</p>
+              <p id="if-yes">Great! No doubt you have an impressive toolset that will not only assist you, but also your fellow students. Go on with the rest of the survey to see where you fit!</p>
+              <p id="if-no">No worries! Epicodus curriculum is built so that students can learn from the ground up. Go on with the rest of the survey to see where you fit!</p>
             </div>
             <div class="form-control">
               <label for="appeal">Which are you more interested in?</label>
               <div class="btn-group" id="appeal">
                 <label class="btn btn-secondary">Front End Development
-                  <input type="radio" name="front-or-back" value="front">
-                </label>
+                    <input type="radio" name="front-or-back" value="front">
+                  </label>
                 <label class="btn btn-secondary">Back End Development
-                  <input type="radio" name="front-or-back" value="back">
-                </label>
+                    <input type="radio" name="front-or-back" value="back">
+                  </label>
               </div>
               <div id="rest-of-survey">
                 <div class="form-control">
@@ -76,14 +77,14 @@
                     <label for="environment">Choose a work environment</label>
                     <div class="btn-group" id="environment">
                       <label class="btn btn-secondary">Corporate software
-                        <input type="radio" name="enviro" value="sharp">
-                      </label>
+                          <input type="radio" name="enviro" value="sharp">
+                        </label>
                       <label class="btn btn-secondary">Company Applications
-                        <input type="radio" name="enviro" value="java">
-                      </label>
+                          <input type="radio" name="enviro" value="java">
+                        </label>
                       <label class="btn btn-secondary">Small studio
-                        <input type="radio" name="enviro" value="ruby">
-                      </label>
+                          <input type="radio" name="enviro" value="ruby">
+                        </label>
                     </div>
                   </div>
                   <div class="row">
@@ -92,25 +93,30 @@
                 </div>
               </div>
               <div id="front-track">
-                <p>If <a href="#">Front End</a>Development is what interests you then consider the <a href="#">CSS</a> or <a href="#">Design</a> classes that Epicodus offers.  These tracks will lean towards front end web development and design.</p>
+                <p>If <a href="#">Front End</a>Development is what interests you then consider the <a href="#">CSS</a> or <a href="#">Design</a> classes that Epicodus offers. These tracks will lean towards front end web development and design.</p>
               </div>
             </div>
           </form>
           <div id="cSharp">
             <h4>C#</h4>
-            <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+            <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also
+              been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working
+              for a larger company on business software, C# is a great choice.</p>
           </div>
           <div id="java">
             <h4>Java</h4>
-            <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+            <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces.
+              Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance
+              applications, Java could be a good language to learn.</p>
           </div>
           <div id="ruby">
             <h4>Ruby</h4>
-            <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.<br>
-              Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing. </p>
-            </div>
+            <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became
+              popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.<br>            Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks
+              including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing. </p>
           </div>
         </div>
       </div>
-    </body>
-    </html>
+    </div>
+  </body>
+</html>
