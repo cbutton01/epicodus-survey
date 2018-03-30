@@ -46,10 +46,16 @@ $(document).ready(function(){
     //series of results and conditionals for results to display
     if(enviro === "sharp"){
       $("#cSharp").show();
+      $('#java').hide();
+      $('#ruby').hide();
     } else if (enviro === "java") {
-      $("#java").toggle();
+      $("#java").show();
+      $('#ruby').hide();
+      $('#cSharp').hide();
     } else if (enviro === "ruby") {
       $("#ruby").show();
+      $('#java').hide();
+      $('#cSharp').hide();
     };
   });
 });
